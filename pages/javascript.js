@@ -1,10 +1,9 @@
-import type { NextPage } from 'next'
 import { useState } from 'react'
 
 import mockCardData from './lib/mockCardData';
-import { Card } from './components/card';
+import { CardJS } from './components/cardjs';
 
-const Home: NextPage = () => {
+const HomeJS = () => {
   const [cardData] = useState(mockCardData);
 
   return (
@@ -12,10 +11,10 @@ const Home: NextPage = () => {
       <pre>
         { JSON.stringify(cardData, null, 2) }
         {/* TODO: For each element in `cardData`
-        render a Card component with that data. */}
+        render a CardJS component with that data. */}
       </pre>
     </div>
   )
 }
 
-export default Home
+export default HomeJS
